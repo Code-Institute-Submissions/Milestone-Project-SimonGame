@@ -1,30 +1,124 @@
-#bigger-box {
-  background: #858586;
-  border-radius: 35%;
-  height: 500px;
-  width: 500px;
+/****************** Global *********************/
+
+body {
+  background-color: rgba(145, 176, 202, 0.65);
+}
+
+/* Play buttons */
+/* The switch - the box around the slider */
+.switch {
   position: relative;
-  border-style: solid;
-  border-width: 10px;
-  margin: auto;
-  margin-top: 60px;
-  box-shadow: 8px 8px 15px 5px #a7a6a6;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
-#smaller-box {
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
   position: absolute;
-  background: grey;
-  border-radius: 35%;
-  height: 250px;
-  width: 250px;
-  border-style: solid;
-  border-width: 10px;
-  top: 50%;
-  left: 50%;
-  margin: -125px 0px 0px -125px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
 
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/****************** Game-area *********************/
+.game-area,
+.center-circle {
+  background: #000000;
+  border-color: #000000;
+}
+.game-area {
+  position: relative;
+  margin: -20px auto;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: 1px solid;
+  box-shadow: none;
+  text-align: center;
+}
+
+.game-btn {
+  position: absolute;
+  height: 44%;
+  width: 44%;
+}
+.game-btn.topleft {
+  top: 20px;
+  left: 20px;
+  background-color: #2659a9;
+  border-radius: 100% 0 0 0;
+}
+.game-btn.topright {
+  top: 20px;
+  right: 20px;
+  background-color: red;
+  border-radius: 0 100% 0 0;
+}
+.game-btn.bottomleft {
+  bottom: 20px;
+  left: 20px;
+  background-color: green;
+  border-radius: 0 0 0 100%;
+}
+.game-btn.bottomright {
+  bottom: 20px;
+  right: 20px;
+  background-color: yellow;
+  border-radius: 0 0 100% 0;
+}
+
+/* Media query */
+@media (max-width: 785px){
+  .game-area  {
+    width: 351px;
+    height: 351px;
+    margin-top: 10px;
+    margin-bottom: 60px
+   }
+
+@media (max-width: 360px){
+  .game-area  {
+    width: 351px;
+    height: 351px;
+    right: 9px;
+  }
+}
