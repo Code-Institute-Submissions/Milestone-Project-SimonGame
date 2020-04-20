@@ -112,8 +112,7 @@ input:checked + .slider1:before {
 .game-area {
   background: #000000;
   position: relative;
-  margin: -20px auto;
-  height: 400px;
+  margin: -0;
   width: 400px;
   border-radius: 50%;
   box-shadow: none;
@@ -123,7 +122,7 @@ input:checked + .slider1:before {
 .game-btn {
   position: absolute;
   height: 44%;
-  width: 44%;
+  width: 45.5%;
 }
 .game-btn.topleft {
   top: 20px;
@@ -179,6 +178,10 @@ footer {
     margin-top: 10px;
     margin-bottom: 60px
    }
+   .game-btn {
+   height: 43%;
+   width: 43%;
+  }
   .play-button {
    margin-top: -50px; 
   }
@@ -190,7 +193,10 @@ footer {
   .game-area  {
     width: 340px;
     height: 340px;
-    margin-right: 20px;
+  }
+   .game-btn {
+   height: 43%;
+   width: 42.5%;
   }
   #turn {
     margin: 0 41% 0 41%;
