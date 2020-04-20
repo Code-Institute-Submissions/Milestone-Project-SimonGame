@@ -43,7 +43,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalCenterTitle">
-              Rules and Instructions
+              Welcome player!
             </h5>
             <button
               type="button"
@@ -63,12 +63,13 @@
             SIMON generates.<br />
             <h4 class="text-center">How To Play?</h4>
             <br />
-            1. Press green START button; SIMON will give the first signal.<br />
-            2. Repeat the signal by pressing the same pad.<br />
-            3. SIMON will duplicate the first signal and will add one.<br />
-            4. Repeat these two signals by pressing the same colour pads.<br />
-            5. SIMON will duplicate these first two signals and add one.<br />
-            6. You must reach 20 to win.<br /><br />
+            1. Turn the power switch on.<br />
+            2. Press START button; It will now give the first signal.<br>
+            3. Repeat the signal by pressing the same color pad.<br>
+            4. It will duplicate the signal and add one.<br>
+            5. Repeat those 2 signals by pressing the same color pad. <br>
+            6. Continue doing this till you reach as high as possible. <br><br>
+            <strong>Lets see how high you can get!</strong><br><br>
 
             <h4 class="text-center">Strict Mode</h4>
             <br />
@@ -98,43 +99,75 @@
     </section>
     <!-- play buttons -->
     <section>
-      <label class="switch">
-        <input type="checkbox" />
-        <span class="slider"></span>
-      </label>
-      <button class="button" id="start">Start</button>
-      <label class="switch">
-        <input type="checkbox" />
-        <span class="slider toggle"></span>
-      </label>
-      <div class="text1"><span>POWER</span><span>STRICT</span></div>
-      <div id="turn"></div>
-      <div class="text2">
-        COUNT
-      </div>
+      <div class="container play-button">
+        <div class="row justify-content-center">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+          <button class="button" id="start">Start</button>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider1 toggle"></span>
+          </label>
+        </div>
+        <div class="row justify-content-center">
+          <div class="text1"><span>POWER</span></div>
+          <div class="text2"><span>STRICT</span></div>
+        </div>
+        <div id="turn" class="row justify-content-center"></div>
+          <div class="text3 row justify-content-center">
+            COUNT
+          </div>
+        </div>
     </section>
-    <!-- -------------------- FOOTER ----------------------- -->
-    <footer>
-      <ul class="list-inline social-links">
-        <li>
-          <a target="blank" href="https://github.com/Joeri157"
-            ><i class="fa fa-github"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            target="blank"
-            href="https://www.linkedin.com/in/joeri-van-den-kieboom-990162192/"
-            ><i class="fa fa-linkedin"></i
-          ></a>
-        </li>
-        <li>
-          <a target="blank" href="https://www.instagram.com/grzeszczykjustyna/"
-            ><i class="fa fa-instagram"></i
-          ></a>
-        </li>
-      </ul>
-      <p class="footer-text">&copy; 2020 Joeri van den Kieboom &middot;</p>
+
+    <!-- FOOTER -->
+    <footer class="page-footer font-small special-color-dark pt-4">
+      <div class="container">
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a
+              href="https://www.facebook.com/joeri.vandenkieboom"
+              target="_blank"
+              class="btn-floating btn-fb mx-1"
+            >
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://github.com/Joeri157"
+              target="_blank"
+              class="btn-floating btn-tw mx-1"
+            >
+              <i class="fab fa-github"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://www.linkedin.com/in/joeri-van-den-kieboom-990162192/"
+              target="_blank"
+              class="btn-floating btn-li mx-1"
+            >
+              <i class="fab fa-linkedin-in"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://www.instagram.com/joerikieboom/"
+              target="_blank"
+              class="btn-floating btn-dribbble mx-1"
+            >
+              <i class="fab fa-instagram"> </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright
+      </div>
     </footer>
 
     <script
