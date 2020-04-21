@@ -112,8 +112,8 @@ input:checked + .slider1:before {
 .game-area {
   background: #000000;
   position: relative;
-  margin: -0;
-  width: 400px;
+  margin: 0 25% 0 25%;
+  height: 450px;
   border-radius: 50%;
   box-shadow: none;
   text-align: center;
@@ -121,8 +121,8 @@ input:checked + .slider1:before {
 
 .game-btn {
   position: absolute;
-  height: 44%;
-  width: 45.5%;
+  height: 44.1%;
+  width: 44.7%;
 }
 .game-btn.topleft {
   top: 20px;
@@ -175,7 +175,6 @@ footer {
   .game-area  {
     width: 351px;
     height: 351px;
-    margin-top: 10px;
     margin-bottom: 60px
    }
    .game-btn {
@@ -191,8 +190,9 @@ footer {
 
 @media (max-width: 360px){
   .game-area  {
-    width: 340px;
-    height: 340px;
+    width: 325px;
+    height: 325px;
+    margin: 20px 0 60px 0;
   }
    .game-btn {
    height: 43%;
@@ -202,3 +202,5 @@ footer {
     margin: 0 41% 0 41%;
   }
 }
+
+/* LEADERBOARD */
