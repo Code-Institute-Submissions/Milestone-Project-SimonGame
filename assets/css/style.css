@@ -213,7 +213,7 @@ footer {
 /* Media query */
 @media (max-width: 785px){
   .game-area  {
-    width: 351px;
+    width: 100%;
     height: 351px;
     margin-bottom: 60px
    }
@@ -228,9 +228,24 @@ footer {
     margin: 0 46% 0 46%;
   }
 
+@media (max-width: 426px){
+  .game-area  {
+    width: 100%;
+    /* height: 348px; */
+    height: 375px;
+    margin: 20px 0 60px 0;
+  }
+   .game-btn {
+   height: 43.5%;
+   width: 44%;
+  }
+  #turn {
+    margin: 0 43% 0 43%;
+  }
+
 @media (max-width: 360px){
   .game-area  {
-    width: 325px;
+    width: 100%;
     height: 325px;
     margin: 20px 0 60px 0;
   }
@@ -241,4 +256,5 @@ footer {
   #turn {
     margin: 0 41% 0 41%;
   }
+
 }
