@@ -10,7 +10,7 @@ body {
   margin-top : 25px;
 }
 
-.button {
+.start-button {
   border-radius: 45%;
   font-size: 2em;
   background-color: #dc3545;
@@ -124,29 +124,69 @@ input:checked + .slider1:before {
   height: 44.1%;
   width: 44.7%;
 }
-.game-btn.topleft {
+
+.topleft {
   top: 20px;
   left: 20px;
   background-color: #2659a9;
   border-radius: 100% 0 0 0;
 }
-.game-btn.topright {
+
+.topleft:hover {
+  background-color: #2659a9;
+  box-shadow:0px 0px 20px 15px #0272ea;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.topright {
   top: 20px;
   right: 20px;
-  background-color: red;
+  background-color: #be1c2b;
   border-radius: 0 100% 0 0;
 }
-.game-btn.bottomleft {
+
+.topright:hover {
+  background-color: #be1c2b;
+  box-shadow:0 0 20px 15px #fc0017;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.bottomleft {
   bottom: 20px;
   left: 20px;
-  background-color: green;
+  background-color: #1e7e34;
   border-radius: 0 0 0 100%;
 }
-.game-btn.bottomright {
+
+.bottomleft:hover {
+  background-color: #1e7e34;
+  box-shadow:0 0 20px 15px #28a745;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.bottomright {
   bottom: 20px;
   right: 20px;
-  background-color: yellow;
+  background-color: #c7c730;
   border-radius: 0 0 100% 0;
+}
+
+.bottomright:hover {
+  background-color: #c7c730;
+  box-shadow:0 0 20px 15px #e8e800;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 /* Footer */
@@ -202,5 +242,3 @@ footer {
     margin: 0 41% 0 41%;
   }
 }
-
-/* LEADERBOARD */
