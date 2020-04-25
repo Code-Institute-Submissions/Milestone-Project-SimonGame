@@ -1,0 +1,262 @@
+/****************** Global *********************/
+
+body {
+  background-color: rgba(145, 176, 202, 0.65);
+}
+
+/* Play buttons */
+
+.play-button {
+  margin-top : 25px;
+}
+
+.start-button {
+  border-radius: 200px;
+  font-size: 2em;
+  background-color: #dc3545;
+  border-color: #a5a3a0;
+}
+
+.text1 {
+    margin-right: 90px;
+}
+
+#turn {
+  position: relative;
+  background: #330000;
+  color: red;
+  font-family: courier;
+  font-size: 20px;
+  height: 30px;
+  margin: 0 47% 0 47%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  border: 2px solid red;
+  border-radius: 20px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 37px;
+  height: 23px;
+  margin: 15px 15px 0px 15px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider,
+.slider1 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 30%;
+  background-color: #9934cd;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before,
+.slider1:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 30%;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: lime;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px lime;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+/* Slider1 */
+input:checked + .slider1 {
+  background-color: orange;
+}
+
+input:focus + .slider1 {
+  box-shadow: 0 0 1px orange;
+}
+
+input:checked + .slider1:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+/****************** Game-area *********************/
+.game-area {
+  background: #000000;
+  position: relative;
+  margin: 0 25% 0 25%;
+  height: 450px;
+  border-radius: 50%;
+  box-shadow: none;
+  text-align: center;
+}
+
+.game-btn {
+  position: absolute;
+  height: 44.1%;
+  width: 44.7%;
+}
+
+.topleft {
+  top: 20px;
+  left: 20px;
+  background-color: #2659a9;
+  border-radius: 100% 0 0 0;
+}
+
+.topleft:hover {
+  background-color: #2659a9;
+  box-shadow:0px 0px 20px 15px #0272ea;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.topright {
+  top: 20px;
+  right: 20px;
+  background-color: #be1c2b;
+  border-radius: 0 100% 0 0;
+}
+
+.topright:hover {
+  background-color: #be1c2b;
+  box-shadow:0 0 20px 15px #fc0017;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.bottomleft {
+  bottom: 20px;
+  left: 20px;
+  background-color: #1e7e34;
+  border-radius: 0 0 0 100%;
+}
+
+.bottomleft:hover {
+  background-color: #1e7e34;
+  box-shadow:0 0 20px 15px #28a745;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.bottomright {
+  bottom: 20px;
+  right: 20px;
+  background-color: #c7c730;
+  border-radius: 0 0 100% 0;
+}
+
+.bottomright:hover {
+  background-color: #c7c730;
+  box-shadow:0 0 20px 15px #e8e800;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+/* Footer */
+a {
+    background-color: transparent;
+    color: #404040;
+    font-size: 1.5em;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+footer {
+    position: fixed;
+    bottom: 15px;
+    margin: 0;
+    width: 100%;
+    line-height: 1px;
+}
+
+/* Media query */
+@media (max-width: 785px){
+  .game-area  {
+    width: 100%;
+    height: 351px;
+    margin-bottom: 60px
+   }
+   .game-btn {
+   height: 43%;
+   width: 43%;
+  }
+  .play-button {
+   margin-top: -50px; 
+  }
+  #turn {
+    margin: 0 46% 0 46%;
+  }
+}
+
+@media (max-width: 426px){
+  .game-area  {
+    width: 100%;
+    height: 375px;
+    margin: 20px 0 60px 0;
+  }
+   .game-btn {
+   height: 43.5%;
+   width: 44%;
+  }
+  #turn {
+    margin: 0 43% 0 43%;
+  }
+}
+
+@media (max-width: 360px){
+  .game-area  {
+    width: 100%;
+    height: 325px;
+    margin: 20px 0 60px 0;
+  }
+   .game-btn {
+   height: 43%;
+   width: 42.5%;
+  }
+  #turn {
+    margin: 0 41% 0 41%;
+  }
+}
