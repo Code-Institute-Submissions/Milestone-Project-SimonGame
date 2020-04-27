@@ -14,7 +14,7 @@
       src="https://kit.fontawesome.com/ebd81c50ad.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>Simon Game by Joeri</title>
   </head>
 
@@ -90,42 +90,38 @@
       </div>
     </div>
     <!-- GAME AREA -->
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-6 game-area">
-            <div id="bluepad" class="game-btn topleft"></div>
-            <div id="redpad" class="game-btn topright"></div>
-            <div id="yellowpad" class="game-btn bottomright"></div>
-            <div id="greenpad" class="game-btn bottomleft"></div>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 game-area">
+          <div id="bluepad" class="game-btn topleft"></div>
+          <div id="redpad" class="game-btn topright"></div>
+          <div id="greenpad" class="game-btn bottomleft"></div>
+          <div id="yellowpad" class="game-btn bottomright"></div>
         </div>
       </div>
-    </section>
+    </div>
     <!-- play buttons -->
-    <section>
-      <div class="container play-button">
-        <div class="row justify-content-center">
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider"></span>
-          </label>
-          <button class="button" id="start">Start</button>
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider1 toggle"></span>
-          </label>
-        </div>
-        <div class="row justify-content-center">
-          <div class="text1"><span>POWER</span></div>
-          <div class="text2"><span>STRICT</span></div>
-        </div>
-        <div id="turn" class="row justify-content-center"></div>
-        <div class="text3 row justify-content-center">
-          COUNT
-        </div>
+    <div class="container play-button">
+      <div class="row justify-content-center">
+        <label class="switch">
+          <input type="checkbox" id="on" />
+          <span class="slider"></span>
+        </label>
+        <button class="start-button" id="start">Start</button>
+        <label class="switch">
+          <input type="checkbox" id="strict" />
+          <span class="slider1"></span>
+        </label>
       </div>
-    </section>
+      <div class="row justify-content-center">
+        <div class="text1"><span>POWER</span></div>
+        <div class="text2"><span>STRICT</span></div>
+      </div>
+      <div id="turn" class="row justify-content-center"></div>
+      <div class="text3 row justify-content-center">
+        COUNT
+      </div>
+    </div>
 
     <!-- FOOTER -->
     <footer class="page-footer font-small special-color-dark pt-4">
@@ -169,11 +165,24 @@
           </li>
         </ul>
       </div>
-
-      <div class="footer-copyright text-center py-3">
+      <div class="footer-copyright text-center">
         © 2020 Copyright
       </div>
     </footer>
+
+    <!-- AUDIO FILES -->
+    <audio id="clip-1">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" />
+    </audio>
+    <audio id="clip-2">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" />
+    </audio>
+    <audio id="clip-3">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" />
+    </audio>
+    <audio id="clip-4">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" />
+    </audio>
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

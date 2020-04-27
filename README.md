@@ -1,5 +1,5 @@
 <h1 align="center">
-Interactive Frontend - Milestone Project 2 -Simon Game - Joeri van den Kieboom
+Interactive Frontend - Milestone Project 2 -Simon Game <br> Joeri van den Kieboom
 </h1>
 <div align="center">
 
@@ -19,7 +19,7 @@ The main goal of the Simon game is to provide a fun and challenging experience t
 
 ### Player Experience
 
-- Should a player get stuck, there is a *'rules and intructions'* button in the top left.
+- Added an Alert when you open my website, so you get a reminder on reading the **Rules and Instructions**.
 
 ### User Stories
 
@@ -40,19 +40,18 @@ The main goal of the Simon game is to provide a fun and challenging experience t
 
 - *Power Slider -* <br> 
 A simple slider to turn the game ON or OFF.
-It will turn basic green to see that you've put the button on ON.
+It will turn basic green to see that you've put the button ON.
 
 - *Coloured Pads -* <br>
 4 Basic (abit darker) color pads like the same simon game.<br>
-All pads have a CSS hover style, so the player could easily see which pad they are going to press.
+All pads light up with a lighter color and box-shadow effect.
 
 - *Start Button -* <br>
 A start button which is changing in color when you turn the power ON. <br>
 With the change in color you are able to see that the game is ready to play.
 
 - *Count Display -* <br> 
-A simple box with a red border and black background with a text color of red. <br>
-Added a box-shadow to it so when the Power is on you see a little glow on it.
+A simple box with a red border and black background with a text color of red.
 
 - *Strict Slider -* <br>
 A slider button to turn the strict option ON or OFF. <br>
@@ -68,17 +67,24 @@ None to implement.
   
 ## Technologies Used
 
-- HTML
-- CSS
-- Javascript
-- Bootstrap
+- [HTML](https://en.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+- [Jquery](https://jquery.com/)
+- [Bootstrap](https://getbootstrap.com/)
 
 ## Testing
 
-- Google
-- Mozilla
-- Microsoft Edge
-- my own mobile phone
+|Test Cases |Status |Issues|
+| --- | --- | --- |
+|When you click on power switch start button should be green| Pass |
+|When you click 'one'of the colored pads it should light up| Pass |
+|When website loads alert box should pop up | Pass |
+|Functions work @ Mozilla| Pass| Only Power button wont reset after win and page reload |
+|Functions work @ Google Chrome| Pass |
+|Functions work @ Microsoft Edge| Pass |
+|Functions work @  Sony Xperia XZ| Pass |
+|Pressing power button too quickly to start game| Pass | This may end up in a crash with multiple sounds and colors flashing|
 
 ## Validators
 
